@@ -21,5 +21,3 @@ def upload_file():
         saved_file = request.files['file']
         saved_file.save(secure_filename(saved_file.filename))
         return 'file uploaded'
-
-
